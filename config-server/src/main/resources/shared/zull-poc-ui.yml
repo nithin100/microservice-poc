@@ -1,0 +1,32 @@
+server:
+  port: 4200
+  
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000  
+
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+  routes:
+    auth-server:
+      path: /uaa/**
+      service-id: auth-server
+      stripPrefix: false
+      sensitiveHeaders: 
+      
+    addition-service:
+      path: /api/**
+      service-id: addition-service
+      strip-prefix: false
+      sensitive-headers:

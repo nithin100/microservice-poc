@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: zull-poc-ui
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true
+      username: configclient
+      password: configpassword

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: auth-server
+  cloud:
+    config:
+      fail-fast: true
+      uri: http://localhost:8888
+      username: configclient
+      password: configsecret
