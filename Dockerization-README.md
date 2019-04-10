@@ -18,6 +18,12 @@ Once this is done run just simply run Docker command for creating image
 
 use **docker build -t Name .** from a module's root directory
 
+## Skip Creating Docker images
+
+You can now skip creating images as I have made these images available on DockerHub
+
+Find these images [here](https://hub.docker.com/u/nithinganji)
+
 ## Creating Docker network
 
 Every Docker container run on its own private network and are not visible to each other. This is a problem when it comes to microservices architecture. Reasons? [find in here](https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/)
