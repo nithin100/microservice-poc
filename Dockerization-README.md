@@ -36,6 +36,18 @@ Once you are finished with creating all images now its time to run these images 
 
 use **docker run --network network-name --name container_name -itd -p xxxx:xxxxx image_name**
 
+## Helpful commands
+
+**docker run --network microservices-poc --name config -it -p 8888:8888 docker.io/nithinganji/config-server:release0**
+ 
+**docker run --network microservices-poc --name registry -it -p 8761:8761 docker.io/nithinganji/registry-server:release0**
+  
+**docker run --network microservices-poc --name authorization-server -it -p 5000:5000 docker.io/nithinganji/auth-server:release0**
+   
+**docker run --network microservices-poc --name addition-microservice -it -p 7777:7777 docker.io/nithinganji/addition-microservice:release0**
+
+**docker run --network microservices-poc --name ui -it -p 4200:4200 docker.io/nithinganji/ui:release0**
+
 ## Time to test
 
 Okay every service is running as container and is time for testing 
