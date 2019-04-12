@@ -1,3 +1,5 @@
+**This repository can now be containerized. Click [here](https://github.com/nithin100/microservice-poc/blob/master/Dockerization-README.md) to learn about it.**
+
 # microservice-poc
 
 Microserives are the new trend in the Web development world. There are plenty of projects that are currently migrating to Microservices. 
